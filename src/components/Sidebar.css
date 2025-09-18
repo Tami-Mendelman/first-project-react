@@ -91,3 +91,10 @@
     display: inline-block;
   }
 }
+.nav-item.active {
+  outline: 2px solid #c7d2fe;
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  font-weight: 600;
+}
+

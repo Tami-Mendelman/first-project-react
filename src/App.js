@@ -3,7 +3,8 @@ import Mode from './components/Mode';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-
+import { Routes, Route } from "react-router-dom";
+import About from "./components/About";
 
 function App() {
   return (
@@ -16,8 +17,11 @@ function App() {
         <Sidebar />
       </aside>
 
-      <main className="main-area">
-        <Mode />
+     <main className="main-area">
+        <Routes>
+          <Route path="/" element={<Mode />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </main>
 
       <footer className="footer-area">

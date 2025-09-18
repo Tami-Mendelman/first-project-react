@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Sidebar.css";
+import { NavLink } from "react-router-dom";
+
 
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
@@ -27,12 +29,22 @@ export default function Sidebar() {
           <button className="close-btn" aria-label="סגור" onClick={toggle}>×</button>
         </div>
 
-        <nav className="sidebar-nav">
-          <a href="#current" className="nav-item">Current Mood</a>
-          <a href="#choose" className="nav-item">Choose Mood</a>
-          <a href="#actions" className="nav-item">Actions</a>
-          <a href="#recent" className="nav-item">Recent</a>
-        </nav>
+      <nav className="sidebar-nav">
+  <NavLink
+    to="/"
+    end
+    className={({ isActive }) => "nav-item" + (isActive ? " active" : "")}
+  >
+    Home
+  </NavLink>
+
+  <NavLink
+    to="/about"
+    className={({ isActive }) => "nav-item" + (isActive ? " active" : "")}
+  >
+    About
+  </NavLink>
+</nav>
 
         <div className="sidebar-footer">
         </div>
