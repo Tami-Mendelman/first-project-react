@@ -1,0 +1,119 @@
+
+.mode {
+  max-width: 560px;
+  margin: 24px auto;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  font-family: system-ui, Arial, sans-serif;
+}
+
+.mode h2 { margin: 0 0 8px; font-size: 22px; }
+.mode h3 { margin: 20px 0 8px; font-size: 18px; color: #444; }
+
+.mood-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 0 4px;
+}
+
+.mood-btn {
+  position: relative;
+  border: 1px solid #ddd;
+  background: #f8f8f8;
+  border-radius: 999px;
+  padding: 10px 16px 10px 14px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.05s ease, background 0.15s ease, box-shadow 0.15s ease;
+}
+.mood-btn:hover {
+  background: #f0f0f0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+.mood-btn:active { transform: translateY(1px); }
+
+.mood-btn.happy  { border-color: #ffd54f; background: #fff8e1; }
+.mood-btn.sad    { border-color: #90caf9; background: #e3f2fd; }
+.mood-btn.angry  { border-color: #ef9a9a; background: #ffebee; }
+
+.mood-badge {
+  display: inline-block;
+  min-width: 22px;
+  padding: 2px 6px;
+  margin-inline-start: 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 1.2;
+  background: #222;
+  color: #fff;
+}
+
+.current {
+  margin-top: 8px;
+  border: 1px dashed #ddd;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.current .label { color: #666; }
+.current .value { font-weight: 700; font-size: 18px; }
+
+.history {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  min-height: 40px;
+}
+.history-item {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  border: 1px solid #eee;
+  background: #f7f7f7;
+}
+.history-item.happy { border-color: #ffd54f; background: #fff8e1; }
+.history-item.sad   { border-color: #90caf9; background: #e3f2fd; }
+.history-item.angry { border-color: #ef9a9a; background: #ffebee; }
+
+.muted { color: #888; }
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.action-btn {
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease, transform 0.05s ease;
+}
+.action-btn:hover {
+  background: #e9e9e9;
+}
+.action-btn:active {
+  transform: translateY(1px);
+}
+
+.action-btn.reset {
+  border-color: #fbc02d;
+  background: #fff9c4;
+}
+
+.action-btn.random {
+  border-color: #80cbc4;
+  background: #e0f2f1;
+}
+
