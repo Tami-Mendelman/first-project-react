@@ -44,6 +44,12 @@ export default function Sidebar() {
   >
     About
   </NavLink>
+    <NavLink
+    to="/grandfather"
+    className={({ isActive }) => "nav-item" + (isActive ? " active" : "")}
+  >
+    grandfather
+  </NavLink>
 </nav>
 
         <div className="sidebar-footer">

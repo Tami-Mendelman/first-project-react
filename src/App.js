@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import { Routes, Route } from "react-router-dom";
 import About from "./components/About";
+import Grandfather from './components/Grandfather';
 
 function App() {
   return (
@@ -21,8 +22,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Mode />} />
           <Route path="/about" element={<About />} />
+           <Route path="/grandfather" element={<Grandfather />} />
+
         </Routes>
       </main>
+
 
       <footer className="footer-area">
         <Footer />
